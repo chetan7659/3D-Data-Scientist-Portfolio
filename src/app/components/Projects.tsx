@@ -4,12 +4,29 @@ import { ExternalLink, Github, Calendar } from 'lucide-react';
 export function Projects() {
   const projects = [
     {
+      title: 'MartScout AI: Indiamart B2B Scraper',
+      description: 'Built a clean, modular web scraper for Indiamart B2B product listings using Python and a robust architecture. Extracted key product data (titles, prices, ratings, company names) and designed a user-friendly Streamlit interface for seamless exploration. Integrated Google Gemini to power an intelligent "Best Deal" recommendation agent.',
+      period: 'Python & Generative AI',
+      tags: ['Python', 'Web Scraping', 'Streamlit', 'Google Gemini', 'Data Extraction'],
+      github: 'https://github.com/chetan7659/MartScout-AI-Indiamart-B2B-Scraper.git',
+      demo: 'https://martscout-ai-indiamart-b2b-scraper-e43.streamlit.app/',
+      image: '/projects/martscout-architecture.png',
+    },
+    {
       title: 'Resume Shortlisting System',
       description: 'Built an AI-powered resume screening system using spaCy and sentence-transformers, achieving 90%+ experience extraction accuracy and 70% fewer false-positive matches through a custom 500+ skill taxonomy. Implemented semantic resume-JD matching with all-MiniLM-L6-v2 embeddings and a transparent scoring engine for HR-compliant rankings. Integrated Google Gemini for explainable AI with anti-hallucination prompts. Deployed on Streamlit for batch processing, reducing manual screening time by 80%.',
       period: 'Aug 2025 - Sept 2025',
       tags: ['NLP', 'Machine Learning', 'spaCy', 'Gemini', 'Streamlit'],
-      github: 'https://github.com/chetan7659/resume-shortlisting-system',
+      github: 'https://github.com/chetan7659/NLP-Powered-Resume-Shortlisting-System.git',
       image: '/projects/resume-shortlisting-architecture.png',
+    },
+    {
+      title: 'Skin Cancer Recognizer using DL',
+      description: 'Built a deep learning system to analyze dermoscopic skin lesion images and classify them into cancerous and non-cancerous categories. Leveraged MobileNetV2 with transfer learning for a highly accurate and computationally efficient lightweight model. Implemented robust data preprocessing, augmentation, and a prediction pipeline that rejects non-skin images. Evaluated using confusion matrices and classification reports.',
+      period: 'Deep Learning Project',
+      tags: ['Deep Learning', 'MobileNetV2', 'TensorFlow', 'Keras', 'OpenCV'],
+      github: 'https://github.com/chetan7659/Skin-Cancer-Recognizer-using-DL.git',
+      image: '/projects/skin-cancer-architecture.png',
     },
     {
       title: 'SecurityBERT: IoT Cyber Threat Detection',
@@ -24,7 +41,7 @@ export function Projects() {
       description: 'Built an enterprise NL-to-SQL AI assistant enabling non-technical users to query CRM sales data using natural language. Integrated Gemini with Snowflake to translate user queries into executable SQL queries. Developed a SQL validation engine enforcing SELECT-only execution to prevent destructive database operations.',
       period: 'Dec 2025 – Jan 2026',
       tags: ['LLM', 'Gemini', 'Snowflake', 'NL-to-SQL', 'Streamlit'],
-      github: 'https://github.com/chetan7659/NL-to-SQL-Assistant',
+      github: 'https://github.com/chetan7659/Enterprise-Sales-AI-agent.git',
       image: '/projects/nl-to-sql-architecture.png',
     },
     {
@@ -40,7 +57,7 @@ export function Projects() {
       description: 'Developed a biometric authentication system using Python and OpenCV for dorsal hand vein recognition. Implemented Maximum Curvature Random Transform to generate revocable biometric templates for improved privacy protection. Applied Kernel Fisher Analysis (KFA) to reduce feature dimensionality by 75% while achieving 94% classification accuracy.',
       period: 'Aug 2022 – May 2023',
       tags: ['OpenCV', 'Biometrics', 'ML', 'Computer Vision', 'Streamlit'],
-      github: 'https://github.com/chetan7659/Biometric-Authentication',
+      github: 'https://github.com/chetan7659/Biometric-Authentication-System-Using-Dorsal-Hand-Vein-Pattern.git',
       image: '/projects/biometric-architecture.png',
     },
     {
@@ -149,7 +166,7 @@ export function Projects() {
                     <span>Code</span>
                   </motion.a>
                   <motion.a
-                    href={project.github}
+                    href={'demo' in project ? (project as any).demo : project.github}
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.05, y: -2 }}

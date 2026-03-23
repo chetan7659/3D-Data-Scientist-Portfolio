@@ -3,6 +3,7 @@ import { Hero } from "@/app/components/Hero";
 import { About } from "@/app/components/About";
 import { Skills } from "@/app/components/Skills";
 import { Projects } from "@/app/components/Projects";
+import { Certifications } from "@/app/components/Certifications";
 import { Resume } from "@/app/components/Resume";
 import { Blog } from "@/app/components/Blog";
 import { Contact } from "@/app/components/Contact";
@@ -25,6 +26,7 @@ export function HomePage() {
         <About />
         <Skills />
         <Projects />
+        <Certifications />
         <Resume />
         <Blog />
         <Contact />

@@ -29,6 +29,7 @@ export function Navbar() {
     { name: 'About', id: 'about' },
     { name: 'Skills', id: 'skills' },
     { name: 'Projects', id: 'projects' },
+    { name: 'Certifications', id: 'certifications' },
     { name: 'Resume', id: 'resume' },
     { name: 'Blog', id: 'blog' },
     { name: 'Contact', id: 'contact' },
