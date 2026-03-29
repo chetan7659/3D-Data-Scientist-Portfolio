@@ -4,6 +4,15 @@ import { ExternalLink, Github, Calendar } from 'lucide-react';
 export function Projects() {
   const projects = [
     {
+      title: 'FuturesBot: Binance Futures Trading Bot',
+      description: 'Built a structured Python CLI and Web UI for Binance USDT-M Futures Testnet trading. Implemented HMAC signing, retries, and error handling for the Binance REST API. Designed a multi-layered architecture including Business, Validation, and Transport layers with a Flask-based monitoring dashboard. Enforced safe financial code practices using Decimal arithmetic and comprehensive unit testing (66 tests).',
+      period: 'Jan 2025 - Feb 2025',
+      tags: ['Python', 'Binance API', 'Flask', 'Trading Bot', 'Financial Tech'],
+      github: 'https://github.com/chetan7659/Simplified-Trading-Bot-Binance-Futures-Testnet-.git',
+      demo: 'https://simplified-trading-bot-binance.onrender.com/',
+      image: '/projects/futuresbot-architecture.png',
+    },
+    {
       title: 'MartScout AI: Indiamart B2B Scraper',
       description: 'Built a clean, modular web scraper for Indiamart B2B product listings using Python and a robust architecture. Extracted key product data (titles, prices, ratings, company names) and designed a user-friendly Streamlit interface for seamless exploration. Integrated Google Gemini to power an intelligent "Best Deal" recommendation agent.',
       period: 'Python & Generative AI',
