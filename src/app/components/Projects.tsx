@@ -13,6 +13,15 @@ export function Projects() {
       image: '/projects/futuresbot-architecture.png',
     },
     {
+      title: 'RetailMind AI: Retail Market Intelligence Copilot',
+      description: 'Built an AI-driven retail market intelligence dashboard for demand forecasting, pricing intelligence, competitive analysis, and market chat using Meta Llama 3.1 and live SerpAPI data. Includes Supabase auth/db, real-time search caching, and a Next.js App Router UI with Tailwind styling.',
+      period: '2026',
+      tags: ['Next.js', 'Supabase', 'Llama 3.1', 'SerpAPI', 'TailwindCSS'],
+      github: 'https://github.com/chetan7659/Retail-Intelligence-AI.git',
+      demo: 'https://retail-intelligence-ai.vercel.app/',
+      image: '/projects/retailmind-ai-architecture.png',
+    },
+    {
       title: 'MartScout AI: Indiamart B2B Scraper',
       description: 'Built a clean, modular web scraper for Indiamart B2B product listings using Python and a robust architecture. Extracted key product data (titles, prices, ratings, company names) and designed a user-friendly Streamlit interface for seamless exploration. Integrated Google Gemini to power an intelligent "Best Deal" recommendation agent.',
       period: 'Python & Generative AI',
